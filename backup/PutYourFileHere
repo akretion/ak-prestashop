@@ -1,0 +1,7 @@
+If you want to restore a database, just put the source code of you website and rename the directory as "source". Also add the *.sql of your website.
+
+The folder structure should be
+/backup/source
+/backup/whatIwantAsNameFile.sql
+
+Enjoy !
