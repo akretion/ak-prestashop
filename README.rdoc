@@ -1,9 +1,6 @@
 = DESCRIPTION:
-This is a recipe for installing easily and testing magento and magentoerpconnect
+This is a recipe for installing easily and testing prestashop
 You should not use this recipe for production is just a basic recipe for testing.
-
-If you want to use chrome or safari you need to apply this path http://www.magentocommerce.com/wiki/how_to_fix_login_for_admin_on_local_install (sorry magento is a bugged software :p)
-
 
 = REQUIREMENTS:
 
