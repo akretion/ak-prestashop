@@ -2,7 +2,7 @@
 
 == Description
 
-This is a recipe for easily installing and testing prestashop.
+This is a recipe for easily install and test prestashop.
 
 You should not use this recipe for production as it is just a basic recipe.
 
