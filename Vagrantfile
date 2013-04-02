@@ -2,7 +2,6 @@
 # vi: set ft=ruby :
 PrestashopPort = 9100
 PhpMyAdminPort = 9200
-require 'berkshelf/vagrant'
 
 Vagrant::Config.run do |config|
   config.vm.box = "precise32"

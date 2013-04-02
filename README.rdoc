@@ -1,10 +1,39 @@
-= DESCRIPTION:
-This is a recipe for installing easily and testing prestashop
-You should not use this recipe for production is just a basic recipe for testing.
+= ak-prestahop
 
-= REQUIREMENTS:
+== Description
 
-= ATTRIBUTES:
+This is a recipe for easily installing and testing prestashop.
 
-= USAGE:
+You should not use this recipe for production as it is just a basic recipe.
+
+== Requirements
+
+- {rvm}[https://rvm.io/]
+- {vagrant}[http://www.vagrantup.com/] >= 1.1.0
+
+== Quickstart
+
+Get the recipe :
+
+    git clone https://github.com/akretion/ak-prestashop.git
+    cd ak-prestashop
+
+If you want a clean and fresh ruby install :
+
+    rvm install 1.9.3
+    rvm use 1.9.3 
+
+Install our ruby dependencies :
+
+    bundle install
+
+Install the berkshelf plugin for vagrant :
+
+    vagrant plugin install berkshelf-vagrant
+
+Boot and install the VM :
+
+    vagrant up
+
+You can now browse to http://localhost:9100/install-dev/index.php and start the installation workflow. In order to complete the workflow, you'll need the root password for the Mysql server : +admin25+
 
