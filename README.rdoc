@@ -35,5 +35,10 @@ Boot and install the VM :
 
     vagrant up
 
+== Usage
+
 You can now browse to http://localhost:9100/install-dev/index.php and start the installation workflow. In order to complete the workflow, you'll need the root password for the Mysql server : +admin25+
 
+Once you've finished the installation workflow, the link to the administration backoffice is wrong. You should use this one : http://localhost:9100/admin-dev/index.php
+
+You can also browse data through phpMyAdmin at http://localhost:9200/ with user +root+ and password +admin25+.
