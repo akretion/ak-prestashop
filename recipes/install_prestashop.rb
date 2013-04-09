@@ -15,13 +15,14 @@ unless File.exists?("#{node[:prestashop][:dir]}/installed_code.flag")
 
   execute "touch #{node[:prestashop][:dir]}/installed_code.flag" do
   end
+
+  #Create a neww database (delete existing if exist)
+  #TODO use database provider https://github.com/opscode-cookbooks/database
+  execute "mysql -u #{node[:mysql][:db][:username]} -p#{node[:mysql][:db][:password]} -e'DROP DATABASE IF EXISTS #{node[:mysql][:db][:database]}'" do
+  end  
+
+  execute "create #{node[:mysql][:db][:database]} database" do
+    command "mysql -u #{node[:mysql][:db][:username]} -p#{node[:mysql][:db][:password]} -e'CREATE DATABASE #{node[:mysql][:db][:database]}'"
+  end
 end
 
-#Create a neww database (delete existing if exist)
-#TODO use database provider https://github.com/opscode-cookbooks/database
-execute "mysql -u #{node[:mysql][:db][:username]} -p#{node[:mysql][:db][:password]} -e'DROP DATABASE IF EXISTS #{node[:mysql][:db][:database]}'" do
-end  
-
-execute "create #{node[:mysql][:db][:database]} database" do
-  command "mysql -u #{node[:mysql][:db][:username]} -p#{node[:mysql][:db][:password]} -e'CREATE DATABASE #{node[:mysql][:db][:database]}'"
-end
