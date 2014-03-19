@@ -2,7 +2,7 @@
 #Install Magento code source
 unless File.exists?("#{node[:prestashop][:dir]}/installed_code.flag")
 
-  execute "git clone git://github.com/PrestaShop/PrestaShop.git prestashop" do
+  execute "git clone #{node[:prestashop][:git]} prestashop" do
      creates node[:prestashop][:dir]
      cwd node[:prestashop][:dir_www]
      group node[:webserver][:unix_user]

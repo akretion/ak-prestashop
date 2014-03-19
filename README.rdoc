@@ -1,38 +1,39 @@
-= ak-prestahop
-
-== Description
+= Description
 
 This is a recipe for easily install and test prestashop.
 
 You should not use this recipe for production as it is just a basic recipe.
 
-== Requirements
+= Requirements
 
 - git
 
 - vagrant >= 1.1.0
 
-- ruby 1.9.3
+Install ``vagrant`` from the package manager of your distribution or from http://downloads.vagrantup.com/
 
-== Quickstart
 
-Get the recipe :
+= INSTALLATION:
 
-    git clone https://github.com/akretion/ak-prestashop.git
-    cd ak-prestashop
+Get the vagrant recipe with the following command:
 
-Install the berkshelf plugin for vagrant :
-
-    vagrant plugin install berkshelf-vagrant
-
+    git clone https://github.com/akretion/ak-magento.git
+    
 Then go in the ak-prestashop directory and launch and install the VM :
 
     vagrant up
 
-== Usage
+= Usage
 
-You can now browse to http://localhost:9100/install-dev/index.php and start the installation workflow. In order to complete the workflow, you'll need the root password for the Mysql server : +admin25+
+Prestashop runs on http://localhost:10100
 
-Once you've finished the installation workflow, the link to the administration backoffice is wrong. You should use this one : http://localhost:9100/admin-dev/index.php
+First run you will need to configure Prestashop so go to http://localhost:10100/install-dev/index.php and start the installation workflow. In order to complete the workflow, you'll need the root password for the Mysql server : +admin25+
 
-You can also browse data through phpMyAdmin at http://localhost:9200/ with user +root+ and password +admin25+.
+Once you've finished the installation workflow, the link to the administration backoffice is wrong. You should use this one : http://localhost:10100/admin-dev/index.php
+
+
+PHPMyAdmin runs on http://localhost:10200
+
+    login: root
+    password: admin25
+

@@ -1,9 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-PrestashopPort = 9100
-PhpMyAdminPort = 9200
-
-require 'berkshelf/vagrant'
+PrestashopPort = 10100
+PhpMyAdminPort = 10200
 
 Vagrant::Config.run do |config|
   config.vm.box = "precise32"
@@ -20,7 +18,7 @@ Vagrant::Config.run do |config|
       chef.json = {
         :prestashop => {
             :port => PrestashopPort,
-            #:git => "git://github.com/PrestaShop/PrestaShop.git",
+            :git => "git://github.com/PrestaShop/PrestaShop.git",
             },
         :phpmyadmin => {:port => PhpMyAdminPort},
     }

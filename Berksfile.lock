@@ -1,4 +1,0 @@
-cookbook 'ak-prestashop', :path => '/home/sebastien/DEV/berkshelf/ak-prestashop'
-cookbook 'ak-tools', :git => 'http://github.com/akretion/ak-tools.git', :ref => '6f5dbeac112c0f8c693a28c82d56bf5e1f23c1be'
-cookbook 'ak-lnmp', :git => 'http://github.com/akretion/ak-lnmp.git', :ref => '0293175296686df9201b8159861a915269beca2c'
-cookbook 'apt', :locked_version => '1.8.4'
