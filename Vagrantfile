@@ -4,8 +4,8 @@ PrestashopPort = 10100
 PhpMyAdminPort = 10200
 
 Vagrant::Config.run do |config|
-  config.vm.box = "precise32"
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   config.vm.forward_port PrestashopPort, PrestashopPort
   config.vm.forward_port PhpMyAdminPort, PhpMyAdminPort

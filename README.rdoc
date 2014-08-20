@@ -10,14 +10,16 @@ You should not use this recipe for production as it is just a basic recipe.
 
 - vagrant >= 1.1.0
 
+- VirtualBox
+
 Install ``vagrant`` from the package manager of your distribution or from http://downloads.vagrantup.com/
+Install ``Virtualbox``` from the package manager of your distribution or from https://www.virtualbox.org/wiki/Downloads
 
 
 = INSTALLATION:
 
 Get the vagrant recipe with the following command:
-
-    git clone https://github.com/akretion/ak-prestashop.git
+    git clone https://github.com/YotpoLtd/ak-prestashop.git
     
 Then go in the ak-prestashop directory and launch and install the VM :
 
