@@ -7,6 +7,8 @@ repo_list=(
     http://github.com/akretion/ak-tools.git
     http://github.com/akretion/ak-lnmp.git
     http://github.com/opscode-cookbooks/apt.git
+    http://github.com/opscode-cookbooks/ssh_known_hosts.git
+    http://github.com/opscode-cookbooks/partial_search.git
 )
 
 set -e
