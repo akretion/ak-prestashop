@@ -19,7 +19,7 @@ Install ``Virtualbox``` from the package manager of your distribution or from ht
 = INSTALLATION:
 
 Get the vagrant recipe with the following command:
-    git clone https://github.com/YotpoLtd/ak-prestashop.git
+    git clone https://github.com/akretion/ak-prestashop.git
     
 Then go in the ak-prestashop directory and launch and install the VM :
 
